@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 
 # Load trained model
-w = pickle.load(open(r'F:\INTERSHIP\Lung Prediction\lungs.sav', 'rb'))
+w = pickle.load(open(r'WEATHER_APP/lungs.sav', 'rb'))
 
 def predict(input_data):
     input_array = np.asarray(input_data).reshape(1, -1)
